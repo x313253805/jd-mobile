@@ -1,0 +1,70 @@
+/*通用样式*/
+*,
+::before,
+::after {
+
+	margin: 0;
+	padding: 0;
+	
+	/*点击高亮效果*/
+	-webkit-tap-highlight-color:transparent;
+
+	/*盒子模型，防止修改自己影响布局*/
+	-webkit-box-sizing:border-box;
+	box-sizing: border-box;
+
+	/*统一设置文字*/
+	font: 400 14px/16px 'microsoft yahei';
+
+
+}
+
+/*input标签去掉默认样式*/
+input {
+	border: none;
+	outline: none;
+	-webkit-appearance:none;
+}
+
+/*a标签去掉下划线*/
+a {
+	text-decoration: none;
+}
+
+/*去掉列表的小圆点*/
+ul,ol {
+	list-style: none;
+}
+
+/*浮动*/
+.f_l {
+	float: left;
+}
+.f_r {
+	float: right;
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after {
+	content: '';
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+/*表框的通用样式*/
+.b_l {
+	border-left: 1px solid #eee;
+}
+.b_t {
+	border-top: 1px solid #eee;
+}
+.b_b {
+	border-bottom: 1px solid #eee;
+}
+.b_r {
+	border-right: 1px solid #eee;
+}

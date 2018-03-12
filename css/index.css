@@ -1,0 +1,278 @@
+
+/*外部的容器*/
+.jd_container {
+	width: 100%;
+	/*设置高度，超出body就会出现滚动条*/
+	min-height: 800px;
+	background-color: #eee;
+}
+
+
+/*容器的头部*/
+.jd_container .container_header {
+	width: 100%;
+	height: 32px;
+	padding: 0 40px 0 70px;
+	background-color: rgba(201, 21, 35,0);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.jd_container .container_header a {
+	position: absolute;
+	left: 5px;
+	top: 1px;
+	width: 60px;
+	height: 30px;
+	background-image: url(../images/sprites.png);
+	background-position: 0 -103px;
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+	/*隐藏文本*/
+	text-indent: -9999px;
+}
+.jd_container .container_header input {
+	width: 100%;
+	height: 28px;
+	border-radius: 20px;
+	margin-top: 2px;
+	padding-left: 25px;
+}
+.jd_container .container_header span {
+	position: absolute;
+	left: 75px;
+	top: 6px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/sprites.png);
+	background-size: 200px 200px;
+	background-position:  -80px 4px;
+}
+.jd_container .container_header p {
+	position: absolute;
+	top: 0;
+	right: 5px;
+	line-height: 32px;
+	color: #fff;
+}
+
+/*容器的banner部分*/
+.jd_container .container_banner {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.jd_container .container_banner ul:nth-child(1) {
+	width: 1000%;
+	/*默认向左移动一张图片*/
+	transform: translateX(-10%);
+}
+.jd_container .container_banner ul:nth-child(1) li {
+	float: left;
+	width: 10%;
+	
+}
+.jd_container .container_banner ul:nth-child(1) li a {
+	width: 100%;
+}
+.jd_container .container_banner ul:nth-child(1) li a img {
+	width: 100%;
+}
+
+.jd_container .container_banner ul:nth-child(2) {
+	position: absolute;
+	width: 20%;
+	left: 40%;
+	bottom: 8px;
+	text-align: center;
+}
+.jd_container .container_banner ul:nth-child(2) li {
+	float: left;
+	margin-left: 4px;
+	width: 5px;
+	height: 5px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+.jd_container .container_banner ul:nth-child(2) li.current {
+	background-color: #fff;
+}
+
+
+/*容器的nav部分*/
+.jd_container .container_nav {
+	width: 100%;
+	background-color: #fff;
+	padding-top: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.jd_container .container_nav ul {
+	width: 100%;
+}
+.jd_container .container_nav ul li {
+	width: 25%;
+	float: left;
+}
+.jd_container .container_nav ul li img {
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+}
+.jd_container .container_nav ul li p {
+	text-align: center;
+	margin: 5px 0;
+	font-size: 12px;
+	color: #666;
+}
+
+/*容器的main部分*/
+.jd_container .container_main {
+	width: 100%;
+	padding: 0 5px;
+}
+.jd_container .container_main .main_content {
+	width: 100%;
+	min-height: 130px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 2px #999;
+}
+.jd_container .container_main .main_content .content_top {
+	height: 32px;
+	border-bottom: 1px solid #eee;
+}
+
+.jd_container .container_main .main_content:nth-child(1) {
+	margin-top: 10px;
+}
+.jd_container .container_main .main_content:nth-child(1) .content_top {
+	border-bottom: none;
+}
+.jd_container .container_main .main_content:nth-child(1) .content_top span {
+	float: left;
+	width: 20px;
+	height: 25px;
+	background-image: url(../images/seckill-icon.png);
+	background-repeat: no-repeat;
+	background-size: 20px 25px;
+	margin-left: 3px;
+	margin-top: 3.5px;
+}
+.jd_container .container_main .main_content:nth-child(1) .content_top  p {
+	color: rgb(201, 21, 35);
+	line-height: 32px;
+	float: left;
+	margin-left: 5px;
+}
+.jd_container .container_main .main_content:nth-child(1) .content_top  ul {
+	float: left;
+	margin-top: 8.5px;
+	margin-left: 5px;
+}
+.jd_container .container_main .main_content:nth-child(1) .content_top  ul li {
+	float: left;
+	margin-left: 3px;
+	width: 15px;
+	height: 15px;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 15px;
+	font-size: 12px;
+}
+/*取出第3个和第6个li便签*/
+.jd_container .container_main .main_content:nth-child(1) .content_top  ul li:nth-child(3n) {
+	background-color: transparent;
+	color: #000;
+	font-size: 15px;
+	width: 8px;
+}
+.jd_container .container_main .main_content:nth-child(1) .content_top  a {
+	float: right;
+	margin-right: 3px;
+	font-size: 14px;
+	line-height: 32px;
+	color: #666;
+}
+/*content_bot部分*/
+.jd_container .container_main .main_content .content_bot {
+	width: 100%;
+	padding: 5px 0;
+}
+.jd_container .container_main .main_content:nth-child(1) .content_bot ul {
+	width: 100%;
+}
+.jd_container .container_main .main_content:nth-child(1) .content_bot ul li {
+	float: left;
+	width: 33.3333%;
+}
+.jd_container .container_main .main_content:nth-child(1) .content_bot ul li a {
+	display: block;
+	width: 100%;
+	border-right: 1px solid #999;
+}
+.jd_container .container_main .main_content:nth-child(1) .content_bot ul li:last-child a {
+	border-right: none;
+}
+.jd_container .container_main .main_content:nth-child(1) .content_bot ul li a img {
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+}
+.jd_container .container_main .main_content:nth-child(1) .content_bot ul li p {
+	text-align: center;
+	font-size: 12px;
+}
+.jd_container .container_main .main_content:nth-child(1) .content_bot ul li p:nth-child(2) {
+	color: rgb(201, 21, 35);
+	padding: 3px 0;
+}
+.jd_container .container_main .main_content:nth-child(1) .content_bot ul li p:nth-child(3) {
+	padding: 5px 0;
+	text-decoration: line-through;
+}
+
+/*除开第一个content,其他的content,n可以取0值，这样最小也是从第2个content开始，跳过第一个*/
+.jd_container .container_main .main_content:nth-child(n+2) .content_top {
+	
+}
+.jd_container .container_main .main_content:nth-child(n+2) .content_top p {
+	color: rgb(201, 21, 35);
+	font-weight: 700;
+	margin-left: 15px;
+	line-height: 32px;
+	position: relative;
+}
+.jd_container .container_main .main_content:nth-child(n+2) .content_top p::before {
+	content: '';
+	width: 5px;
+	height: 16px;
+	background-color:  rgb(201, 21, 35);
+	position: absolute;
+	left: -10px;
+	top: 8px;
+}
+.jd_container .container_main .main_content:nth-child(n+2) .content_bot {
+	width: 100%;
+}
+.jd_container .container_main .main_content:nth-child(n+2) .content_bot ul {
+	width: 100%;
+}
+
+.jd_container .container_main .main_content:nth-child(n+2) .content_bot ul li {
+	width: 50%;
+	float: left;
+}
+.jd_container .container_main .main_content:nth-child(n+2) .content_bot ul li a {
+	display: block;
+	width: 100%;
+}
+.jd_container .container_main .main_content:nth-child(n+2) .content_bot ul li a img {
+	width: 100%;
+	vertical-align: bottom;
+}
+.jd_container .container_main .main_content:last-child .content_bot ul li {
+	float: right;
+}
